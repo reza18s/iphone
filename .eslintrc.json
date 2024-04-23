@@ -1,7 +1,12 @@
 {
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "extends": [
     "standard",
-    "plugin: react/recommended",
+    "plugin:react/recommended",
     "plugin:tailwindcss/recommended",
     "prettier"
   ],
@@ -9,6 +14,7 @@
     "max-len": [2, 250],
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
     "object-curly-newline": 0,
-    "no-unused-vars": "error"
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn"
   }
 }
