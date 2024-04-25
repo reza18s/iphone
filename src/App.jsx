@@ -1,8 +1,14 @@
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
+import NavBar from "./components/NavBar";
+
 function App() {
   return (
-    <>
-      <p>Click on the Vite and React logos to learn more</p>
-    </>
+    <div>
+      <NavBar></NavBar>
+      <Hero></Hero>
+      <Highlights></Highlights>
+    </div>
   );
 }
 

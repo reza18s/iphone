@@ -28,6 +28,10 @@ canvas {
   position: relative;
   max-width: 1120px;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 
 @layer utilities {
   .flex-center {
@@ -35,7 +39,7 @@ canvas {
   }
 
   .nav-height {
-    @apply h-[calc(100vh-60px)];
+    @apply h-[calc(100vh-60px)] max-h-[calc(100vh-60px)];
   }
 
   .btn {
