@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
 import Model from "./components/Model";
 import NavBar from "./components/NavBar";
+import * as sentry from "@sentry/react";
 
 function App() {
    return (
@@ -14,4 +16,4 @@ function App() {
    );
 }
 
-export default App;
+export default sentry.withProfiler(App);
